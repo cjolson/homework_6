@@ -17,7 +17,7 @@ Building off of the web store that you designed and implemented for Assignment 5
         3. Implement your new shopping cart page design in HTML + CSS. Modify your existing web store files as needed.
 2. Required: Create NEW features for your site.
     1. The user can modify options on the Product Detail page (the size, quantity, etc.).
-    2. The Product Detail page should change according to the user’s selection. For example, if a user selected a ​Tiny​​ ​Fire Orange​​ Cat Harness, the page should update with the details of that product (i.e. update size, color and image). This should NOT be a new HTML file. Use JavaScript/jQuery to implement this functionality.
+    2. The Product Detail page should change according to the user’s selection. For example, if a user selected a TinyFire Orange Cat Harness, the page should update with the details of that product (i.e. update size, color and image). This should NOT be a new HTML file. Use JavaScript/jQuery to implement this functionality.
     3. The user can add products to their shopping cart. There should be some visual indication to the user of how many items they have in their shopping cart.
     4. The user should be able to view their shopping cart on a Shopping Cart page, see the items they selected, and remove the items they no longer want.
     5. The shopping cart page should reflect the user’s actual product selections.
@@ -31,8 +31,8 @@ Building off of the web store that you designed and implemented for Assignment 5
 2. Do NOT use any existing JavaScript libraries for this assignment (jQuery is acceptable). You are not required to use jQuery. You can use plain JavaScript. Either is fine.
 3. Note: You can use plain HTML/CSS code only. DO NOT use frameworks like Bootstrap or other libraries (you can “look at it” means you can look at how they do the HTML and CSS and format your code in a similar way, but DO NOT import Bootstrap or other libraries).
 4. Please cite any external resources you use.
-5. Your website does not have to be responsive to screen size changes. However, please test your website for a 1366 x 768 screen ratio using the (https://developers.google.com/web/tools/chrome-devtools/device-mode/) [Developer Tools Device Mode].
-6. Please follow Google’s (https://google.github.io/styleguide/htmlcssguide.html)[HTML, CSS], and (https://google.github.io/styleguide/jsguide.html)[JavaScript Style Guidelines].
+5. Your website does not have to be responsive to screen size changes. However, please test your website for a 1366 x 768 screen ratio using the [Developer Tools Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode/).
+6. Please follow Google’s [HTML, CSS](https://google.github.io/styleguide/htmlcssguide.html), and [JavaScript Style Guidelines](https://google.github.io/styleguide/jsguide.html).
 
 ### Deliverables (27 pts total)
 1. (4 pts total) Low & High-Fidelity Prototypes:
@@ -46,10 +46,10 @@ Building off of the web store that you designed and implemented for Assignment 5
     2. All HTML/CSS files from Assignment 4
     3. A new HTML file for the required new page linked to the main page
     4. For HTML files:
-        1. Make sure each of the pages renders without error. Use the Developer Tools in Chrome to do this, and also use the (https://validator.w3.org)[HTML validator] to validate your HTML file.
+        1. Make sure each of the pages renders without error. Use the Developer Tools in Chrome to do this, and also use the [HTML validator](https://validator.w3.org) to validate your HTML file.
         2. Indent and comment your code; follow the HTML style guides.
     5. For CSS files:
-        1. Make sure the CSS file is well formatted and use the (https://jigsaw.w3.org/css-validator/)[CSS validator] to validate your CSS file.
+        1. Make sure the CSS file is well formatted and use the [CSS validator](https://jigsaw.w3.org/css-validator/) to validate your CSS file.
         2. Indent, comment and follow the CSS style guides.
     6. For JavaScript Files:
         1. Interactions should work without error. Use the Developer Tools in Chrome to help you with this.
@@ -71,7 +71,7 @@ Building off of the web store that you designed and implemented for Assignment 5
 1. Add a “wishlist” functionality. For this feature, users can add products to their wishlist
 and view their wishlist (either on the shopping cart page or a separate page). (max 3pts)
 2. Add a carousel on at least 1 Product Detail page that shows similar products. The
-carousel should be able to scroll left and right. See an (https://drive.google.com/file/d/0B2esDnMdnTGLZ3NkVk9DbTNTcTQ/view)[example here] taken from Amazon.com. (max 5pts)
+carousel should be able to scroll left and right. See an [example here](https://drive.google.com/file/d/0B2esDnMdnTGLZ3NkVk9DbTNTcTQ/view) taken from Amazon.com. (max 5pts)
 ```    
     1. git add *
     2. git commit -m “Please write a message that makes sense here; it is good practice”
