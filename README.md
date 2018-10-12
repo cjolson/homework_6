@@ -31,8 +31,8 @@ Building off of the web store that you designed and implemented for Assignment 5
 2. Do NOT use any existing JavaScript libraries for this assignment (jQuery is acceptable). You are not required to use jQuery. You can use plain JavaScript. Either is fine.
 3. Note: You can use plain HTML/CSS code only. DO NOT use frameworks like Bootstrap or other libraries (you can “look at it” means you can look at how they do the HTML and CSS and format your code in a similar way, but DO NOT import Bootstrap or other libraries).
 4. Please cite any external resources you use.
-5. Your website does not have to be responsive to screen size changes. However, please test your website for a 1366 x 768 screen ratio using the ​Developer Tools Device Mode​.
-6. Please follow Google’s HTML, CSS, and JavaScript Style Guidelines.
+5. Your website does not have to be responsive to screen size changes. However, please test your website for a 1366 x 768 screen ratio using the (https://developers.google.com/web/tools/chrome-devtools/device-mode/) [Developer Tools Device Mode].
+6. Please follow Google’s (https://google.github.io/styleguide/htmlcssguide.html)[HTML, CSS], and (https://google.github.io/styleguide/jsguide.html)[JavaScript Style Guidelines].
 
 ### Deliverables (27 pts total)
 1. (4 pts total) Low & High-Fidelity Prototypes:
@@ -46,10 +46,10 @@ Building off of the web store that you designed and implemented for Assignment 5
     2. All HTML/CSS files from Assignment 4
     3. A new HTML file for the required new page linked to the main page
     4. For HTML files:
-        1. Make sure each of the pages renders without error. Use the Developer Tools in Chrome to do this, and also use the ​HTML validator​ to validate your HTML file.
+        1. Make sure each of the pages renders without error. Use the Developer Tools in Chrome to do this, and also use the (https://validator.w3.org)[HTML validator] to validate your HTML file.
         2. Indent and comment your code; follow the HTML style guides.
     5. For CSS files:
-        1. Make sure the CSS file is well formatted and use the CSS validator to validate your CSS file.
+        1. Make sure the CSS file is well formatted and use the (https://jigsaw.w3.org/css-validator/)[CSS validator] to validate your CSS file.
         2. Indent, comment and follow the CSS style guides.
     6. For JavaScript Files:
         1. Interactions should work without error. Use the Developer Tools in Chrome to help you with this.
@@ -59,19 +59,19 @@ Building off of the web store that you designed and implemented for Assignment 5
     2. Writing should demonstrate reflection on actual events and analyze these events to draw appropriate conclusions.
      
 ### Submission:
-1. Include all the files required in this write up in a new folder called ​assignment_6​ under your main Github folder. You should include,
+1. Include all the files required in this write up in a new folder called assignment_6 under your main Github folder. You should include,
     1. Your reflection in pdf or MS Word format. Include your name, section, and the assignment number in the document.
     2. All files for the homework.
     3. Your CSS, js and image files (and other font files etc. you are using) should be kept in their respective directories (typically font sets, icons, or images are stored in an Assets directory). It is a good way to keep your code organized.
-2. Make sure you do a ​git pull​​ before you start working.
+2. Make sure you do a ```git pull``` before you start working.
 3. Always (for every change, big or small) do a:
-4. The deadline for the Assignment is ​Fri October 26 2018 11:59 pm.​ We will count as your final submission the last ​git push​​ before that time. Anything pushed after that date and time will be counted as a late submission.
+4. The deadline for the Assignment is Fri October 26 2018 11:59 pm. We will count as your final submission the last ```git push``` before that time. Anything pushed after that date and time will be counted as a late submission.
 
 ★ Bonus (8 pts total) ★
 1. Add a “wishlist” functionality. For this feature, users can add products to their wishlist
 and view their wishlist (either on the shopping cart page or a separate page). (max 3pts)
 2. Add a carousel on at least 1 Product Detail page that shows similar products. The
-carousel should be able to scroll left and right. See an ​example here​ taken from Amazon.com. (max 5pts)
+carousel should be able to scroll left and right. See an (https://drive.google.com/file/d/0B2esDnMdnTGLZ3NkVk9DbTNTcTQ/view)[example here] taken from Amazon.com. (max 5pts)
 ```    
     1. git add *
     2. git commit -m “Please write a message that makes sense here; it is good practice”
