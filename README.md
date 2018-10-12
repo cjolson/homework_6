@@ -1,62 +1,79 @@
-# homework_5
- 
+# Assignment #6:
+
 ## 05-430 / 05-630 Fall 2018 – Programming Usable Interfaces
-### Assignment 5: Web HTML and CSS Prototypes (21 pts) Assigned: Wed Sep 19 2018
-**Due: Mon Oct 7 2018 11:59pm**
- 
-### To Do
- For the client that you based your Assignment 2 and 3, and based on the high-fidelity prototypes you created in Assignment3 you will create Web HTML/CSS Prototypes.
- 
-#### HTML:
-1. Create HTML files for each of the 3 required pages:
-   - (2 pts) The home page
-   - (2 pts) The product browsing page that shows the variety of items the store has
-   - (2 pts) The product detail page (pick 1 of the client’s products, and create a detail page for just that product. Make sure to show in the detail page the options that can be used on that product, i.e. color or size. Note: They do not need to be interactive, static HTML and CSS is ok for this assignment)
-2. (2 pts) From the home page, the other 2 pages should be reachable with an ```<a href=...>``` tag link.
-3. (2 pts) Make sure each of the pages renders without error. Use the Developer Tools in Chrome to do this, and also use the HTML validator to validate your HTML file.
-4. (2 pts) Indent and comment your code; follow the HTML style guides.
+### Assignment 6 – Adding Functionality to a Website with JS Assigned: Wed Oct 10 2018
+**Due: Fri Oct 26 2018 11:59 pm**
 
-#### CSS:
-5. (2 pts) Create and include at least 1 CSS file.
-6. (1 pts) Make sure the CSS file is well formatted and use the CSS validator to validate your CSS file.
-7. (1 pts) Indent, comment and follow the CSS style guides. Both HTML + CSS:
-8. (3 pts) These web prototypes should look as close to your high-fidelity digital mockup as possible. Certainly, you should implement in your web prototype what changes are necessary.
-9. Note: You can use VANILLA HTML/CSS code only; don’t use frameworks like Bootstrap or other libraries (you can “look at it” means you can look at how they do the HTML and CSS and format in a similar way, but DON’T import Bootstrap or other libraries).
-10. Please cite any external resources you use.
- 
+### Learning Goals/To Do
+- Practice JavaScript/JQuery by adding functionality to your web site from Assignment 5.
+- Practice with Objects and Storage in JavaScript.
+
+### Requirements:
+Building off of the web store that you designed and implemented for Assignment 5, add the following:
+1. Required: Create a NEW page.
+    a. The page should be a Shopping cart page where users can view items in their cart. Include the following prototypes.
+        i. A low fidelity prototype
+        ii. A high fidelity prototype
+        iii. Implement your new shopping cart page design in HTML + CSS. Modify your existing web store files as needed.
+2. Required: Create NEW features for your site.
+    a. The user can modify options on the Product Detail page (the size, quantity, etc.).
+    b. The Product Detail page should change according to the user’s selection. For
+example, if a user selected a ​Tiny​​ ​Fire Orange​​ Cat Harness, the page should update with the details of that product (i.e. update size, color and image). This should NOT be a new HTML file. Use JavaScript/jQuery to implement this functionality.
+    c. The user can add products to their shopping cart. There should be some visual indication to the user of how many items they have in their shopping cart.
+    d. The user should be able to view their shopping cart on a Shopping Cart page, see the items they selected, and remove the items they no longer want.
+    e. The shopping cart page should reflect the user’s actual product selections.
+    f. **You do NOT need to implement the checkout process.**
+3. Required: Write a one (or more) paragraph reflection
+    a. What challenges or bugs did you encounter?
+    b. How did you overcome these challenges?
+    
+### Other notes:
+1. You will need things we will learn in week 7 and week 8 labs to fully complete this homework assignment. I suggest you start with the JavaScript we learn in Week 7 first.
+2. Do NOT use any existing JavaScript libraries for this assignment (jQuery is acceptable). You are not required to use jQuery. You can use plain JavaScript. Either is fine.
+3. Note: You can use plain HTML/CSS code only. DO NOT use frameworks like Bootstrap or other libraries (you can “look at it” means you can look at how they do the HTML and CSS and format your code in a similar way, but DO NOT import Bootstrap or other libraries).
+4. Please cite any external resources you use.
+5. Your website does not have to be responsive to screen size changes. However, please test your website for a 1366 x 768 screen ratio using the ​Developer Tools Device Mode​.
+6. Please follow Google’s HTML, CSS, and JavaScript Style Guidelines.
+
+### Deliverables (27 pts total)
+1. (4 pts total) Low & High-Fidelity Prototypes:
+    a. A low-fidelity rough sketch for the required new page and features. You can add to your sketch for the previous assignment, but please explain how your sketch changed. Otherwise, simply explain your design choice.
+    b. A high-fidelity digital mockup for the required new pages and features. You can add to your mockup for the previous assignment, but please explain how your mockup changed. Otherwise, simply explain your design choice.
+2. (21 pts total) Web Prototype w/JavaScript:
+    a. At least 1 JavaScript file
+        i. Page updates when selecting product details
+        ii. Adding to cart + visual indication of items in cart
+        iii. Removing items from shopping cart
+    b. All HTML/CSS files from Assignment 4
+    c. A new HTML file for the required new page linked to the main page
+    d. For HTML files:
+        i. Make sure each of the pages renders without error. Use the Developer Tools in Chrome to do this, and also use the ​HTML validator​ to validate your HTML file.
+        ii. Indent and comment your code; follow the HTML style guides.
+    e. For CSS files:
+        i. Make sure the CSS file is well formatted and use the CSS validator to validate your CSS file.
+        ii. Indent, comment and follow the CSS style guides.
+    f. For JavaScript Files:
+        i. Interactions should work without error. Use the Developer Tools in Chrome to help you with this.
+        ii. Indent and comment your code; follow the JavaScript style guides. (see above)
+3. (2 pts total) Reflection:
+    a. Writing should use appropriate style and clearly convey the writer’s concepts.
+    b. Writing should demonstrate reflection on actual events and analyze these events to draw appropriate conclusions.
+     
 ### Submission:
-1. In your main Github PUI folder in your computer, create a new folder and call it homework_5.
-2. You should include all the files required in this write up in that folder.
-   - HTML, CSS files.
-   - Reflection file. The reflection can be pdf or MSword.
-3. Make sure you do a ```git pull``` before you start working.
-4. Always (for every change, big or small) do a:
-```
-git add *
-git commit -m “Please write a message that makes sense here; it is good practice”
-git push
-```
-5. The deadline for the Assignment is Mon Oct 7 2018 11:59pm. We will count as your final submission the last ```git push``` before that time. Anything pushed after that date and time will be counted as late submission.
- 
-### ★ Bonus (maximum 5 pts total) ★
-- Prototype with HTML and CSS additional site pages or add product detail pages for more than one product item
- 
-### Resources​:
-1. [HTML Validator](https://validator.w3.org)
-2. [CSS Validator](https://jigsaw.w3.org/css-validator/)
-3. [Final Code for Lab from Week 4](https://github.com/FranceskaXhakaj/pui-2018/tree/master/week4_final_code)
+1. Include all the files required in this write up in a new folder called ​assignment_6​ under your main Github folder. You should include,
+    a. Your reflection in pdf or MS Word format. Include your name, section, and the assignment number in the document.
+    b. All files for the homework.
+    c. Your CSS, js and image files (and other font files etc. you are using) should be kept in their respective directories (typically font sets, icons, or images are stored in an Assets directory). It is a good way to keep your code organized.
+2. Make sure you do a ​git pull​​ before you start working.
+3. Always (for every change, big or small) do a:
+4. The deadline for the Assignment is ​Fri October 26 2018 11:59 pm.​ We will count as your final submission the last ​git push​​ before that time. Anything pushed after that date and time will be counted as a late submission.
 
-### From Assignment 2
-> Muddy Paws Adventure Gear: We are a small store that sells customizable hiking and adventuring gear for your cat or dog. We are committed to helping all cats and dogs live to their full potential, experiencing the wild alongside their human hiker pals! Our online store helps people buy our line of gear.
->
-> Items:
-> 1. Cat harness
-> 2. Dog harness
-> 3. Food storage attachment to harness
-> 4. Water storage attachment to harness
-> 5. Dog/Cat GPS tracker collar
-> 6. Cat backpack
->
-> Sizes (Tiny/Small/Medium/Large)
->
-> Colors (Strawberry/Blackberry/Crazyberry/Fire Orange)
+★ Bonus (8 pts total) ★
+1. Add a “wishlist” functionality. For this feature, users can add products to their wishlist
+and view their wishlist (either on the shopping cart page or a separate page). (max 3pts)
+2. Add a carousel on at least 1 Product Detail page that shows similar products. The
+carousel should be able to scroll left and right. See an ​example here​ taken from Amazon.com. (max 5pts)
+    a. git add *
+    b. git commit -m “Please write a message that makes sense here; it is good practice”
+    c. git push
+   
