@@ -30,6 +30,18 @@ class Item {
   }
 }
 
+class Cart {
+  constructor() {
+    this.subtotal = 0;
+    this.total = 0;
+    this.shipping = 0;
+    this.numOfItemsInCart = 0;
+    this.items = {};
+  }
+  
+  
+}
+
 function makeItemList() {
   var all_items = [];
   var item;
@@ -42,9 +54,11 @@ function makeItemList() {
 }
 
 function populateItems(all_items, type) {
-  console.log(type+" items");
   var container = document.getElementById(type);
-  var total;
+  if (container == null) {
+    return;
+  }
+  console.log(type+" items");
   if (type == "featured") {
     total = 3;
   } else if (type == "shop") {
@@ -73,9 +87,12 @@ function populateItems(all_items, type) {
 }
 
 $(document).ready(() => {
-  console.log("ready");
-  var all_items = makeItemList();
+    console.log("ready");
+});
+
+$(window).on("load", function() {
+  var all_items=makeItemList();
   populateItems(all_items, "featured");
-  //populateItems(all_items, "shop");
+  populateItems(all_items, "shop");
   populateItems(all_items, "recommended");
 });
