@@ -10,25 +10,32 @@
     <script src="main.js" type="text/javascript"></script>
   </head>
   <body>
+    
     <header>
       <div id="top-bar" class="secondary-background neutral-text">
         Free Shipping on <em>all</em> orders over <b>$50</b>
       </div>
       <nav>
         <a href="index.html">
-          <h1 class="logo primary-text">Muddy Paws <img class="paws" src="Assets/Icons/green-paws.png" 
-                                           alt=""></h1>
+          <h1 class="logo">
+            Muddy Paws <img class="paws" src="Assets/Icons/green-paws.png" alt="">
+          </h1>
         </a>
-        <a class="nav-bar primary-text" href="index.html">Home</a>
-        <a class="nav-bar primary-text" href="shop.html">Shop</a>  
-        <a class="nav-bar primary-text" href="about.html">About</a>
-        <a class="nav-bar primary-text" href=""><img class="cart-link" src="Assets/Icons/cart.png" 
-                                        alt="Cart"></a>
+        <div class="nav-bar">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="shop.html">Shop</a>  
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="">
+            <img class="cart-link" src="Assets/Icons/cart.png" alt="Cart">
+          </a>
+        </div>
       </nav>
     </header>
-    <div id="item-page-content">
+    
+    <div class="item-page-content">
       <div class="item-view">
-        <img class="item-page-img" src="Assets/dog-leash.jpg" 
+        
+        <img class="item-page-img" src="Assets/Items/dog-leash.jpg" 
              alt="Dog Harness">
         <div class="thumbnail-image-wheel">
           <div id="selected-thumbnail-image" class="thumbnail-image"></div>
@@ -36,17 +43,24 @@
           <div class="thumbnail-image"></div>
           <div class="thumbnail-image"></div>
         </div>
-      </div>
+        <div class="item-description">
+          <h4>Details</h4>
+          <p>Lorem ipsum dolor sit amet, risus nec elit, amet tellus volutpat, convallis in pede. 
+          Erat amet et, vel proin, parturient ultricies pede. Sodales ridiculus cum, dui non tellus.</p>
+          <p>Velit mauris, magna amet, morbi odio non. Mauris dolor egestas, nulla varius ante, eget nunc non.</p>
+        </div>
+      </div>  
+      
       <div id="item-page-info">
         <p class="item-name">Dog Harness</p>
         <p class="item-price">$39.95</p>
-        <div class="secondary-text">
+        <div>
           <div class="star">★</div>
           <div class="star">★</div>
           <div class="star">★</div>
           <div class="star">★</div>
           <div class="star">★</div>
-          <div class="light-primary-text all-reviews">See All Reviews (11)</div>
+          <div><a class="all-reviews" href="item-all-reviews.html">See All Reviews (11)</a></div>
         </div>
         <div id="color-selection">
           <button class="select-color strawberry"></button>
@@ -60,55 +74,69 @@
           <button class="select-size">Medium</button>
           <button class="select-size">Large</button>
         </div>
-        <button class="cart">Add to Cart</button>
+        <a href="item-addeded.html"><div class="button">Add to Cart</div></a>
       </div>
-      <div id="recommended-items">
-        <h3 class="secondary-text">Recommended</h3>
-        <div id="recommend-item-1">
-          <a href="dog-harness.html">
-            <img class="shop-gps-tracker-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="GPS Tracker">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">GPS Tracker Collar</div>
-            <div class="item-price-browsing">$54.95</div>
-          </a>
+    
+
+      <div class="recommended-content">
+        <h2>Recommended</h2>
+        <div id="recommended">
+          
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div> 
+
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>  
+          
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>            
+          
         </div>
-        <div id="recommended-item-2">
-          <a href="dog-harness.html">
-            <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="Food Attachment">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">Food Attachment</div>
-            <div class="item-price-browsing">$19.95</div>
-          </a>
-        </div>
-      </div>
-      <div id="item-description">
-        <h4 class="secondary-text">Details</h4>
-        <p>Lorem ipsum dolor sit amet, risus nec elit, amet tellus volutpat, convallis in pede. 
-          Erat amet et, vel proin, parturient ultricies pede. Sodales ridiculus cum, dui non tellus.</p>
-        <p>Velit mauris, magna amet, morbi odio non. Mauris dolor egestas, nulla varius ante, eget nunc non.</p>
-      </div>
+      </div>    
+    
     </div>
-    <footer class="tertiary-background">
-      <div class="primary-text footer-content">
+
+    <footer>
         05-630 Fall 2018 – Programming Usable Interfaces
         <br>Assignment 5: Web HTML and CSS Prototypes
         <br><br>Author: Clara Olson
-        <br><a class="primary-text" href="http://www.claraolson.com/">Website</a> | 
-        <a class="primary-text" href="https://github.com/cjolson">Github</a> | 
-        <a class="primary-text" href="https://www.linkedin.com/in/clara-olson-34581693/">LinkedIn</a>
-      </div>
+        <br><a href="http://www.claraolson.com/">Website</a> | 
+        <a href="https://github.com/cjolson">Github</a> | 
+        <a href="https://www.linkedin.com/in/clara-olson-34581693/">LinkedIn</a>
     </footer>
+    
   </body>
 </html>

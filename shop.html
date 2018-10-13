@@ -10,136 +10,143 @@
     <script src="main.js" type="text/javascript"></script>
   </head>
   <body>
+    
     <header>
       <div id="top-bar" class="secondary-background neutral-text">
         Free Shipping on <em>all</em> orders over <b>$50</b>
       </div>
       <nav>
         <a href="index.html">
-          <h1 class="logo primary-text">Muddy Paws <img class="paws" src="Assets/Icons/green-paws.png" 
-                                           alt=""></h1>
+          <h1 class="logo">
+            Muddy Paws <img class="paws" src="Assets/Icons/green-paws.png" alt="">
+          </h1>
         </a>
-        <a class="nav-bar primary-text" href="index.html">Home</a>
-        <a class="nav-bar primary-text" href="shop.html">Shop</a>  
-        <a class="nav-bar primary-text" href="about.html">About</a>
-        <a class="nav-bar primary-text" href=""><img class="cart-link" src="Assets/Icons/cart.png" 
-                                        alt="Cart"></a>
+        <div class="nav-bar">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="shop.html">Shop</a>  
+          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="">
+            <img class="cart-link" src="Assets/Icons/cart.png" alt="Cart">
+          </a>
+        </div>
       </nav>
     </header>
-    <div id="shop-page">
-      <div id="filter-menu">
-        <div class="top-filter">
-          <h3>Filter</h3>
+    
+    <div class="shop-page">
+      
+      <div class="filter-menu">
+          <h3 class="top-filter">Filter</h3>
+        <div class="filter-sub-menu">
+          <p>Pets</p> <p>+</p>
         </div>
-        <div class="tertiary-background filter-sub-menu">
-          <p class="filter-label">Pets</p> 
-          <p class="expand-filter">+</p>
-        </div>
-        <div class="tertiary-background filter-sub-menu">
-          <p class="filter-label">Gear</p>  
-          <p class="expand-filter">+</p>
+        <div class="filter-sub-menu">
+          <p>Gear</p> <p>+</p>
         </div>
       </div>
-      <div id="shop-content">
-        <div id="shop-heading">
-          <h2 class="secondary-text">Shop</h2>
-        </div>
-        <div id="filter-selection">filter stuff here</div>
-        <div id="shop-item-1" class="item">
-          <a href="dog-harness.html">
-            <img class="shop-dog-harness-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="Dog Harness">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">Dog Harness</div>
-            <div class="item-price-browsing">$39.95</div>
-          </a>
-        </div>
-        <div id="shop-item-2" class="item">
-          <a href="dog-harness.html">
-            <img class="shop-cat-harness-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="Cat Harness">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">Cat Harness</div>
-            <div class="item-price-browsing">$24.95</div>
-          </a>
-        </div>
-        <div id="shop-item-3" class="item">
-          <a href="dog-harness.html">
-            <img class="shop-gps-tracker-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="GPS Tracker">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">GPS Tracker Collar</div>
-            <div class="item-price-browsing">$54.95</div>
-          </a>
-        </div>
-        <div id="shop-item-4" class="item">
-          <a href="dog-harness.html">
-            <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="Food Attachment">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">Food Attachment</div>
-            <div class="item-price-browsing">$19.95</div>
-          </a>
-        </div>
-        <div id="shop-item-5" class="item">
-          <a href="dog-harness.html">
-            <img class="shop-water-attachment-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="Water Attachment">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">Water Attachment</div>
-            <div class="item-price-browsing">$17.95</div>
-          </a>
-        </div>
-        <div id="shop-item-6" class="item">
-          <a href="dog-harness.html">
-            <img class="shop-cat-backpack-img" src="Assets/Items/dog-leash-shop.jpg" 
-                 alt="Cat Backpack">
-            <div class="color-selection-preview">
-              <div class="preview-color strawberry"></div>
-              <div class="preview-color blackberry"></div>
-              <div class="preview-color crazberry"></div>
-              <div class="preview-color fire-orange"></div>
-            </div>
-            <div class="item-name-browsing">Cat Backpack</div>
-            <div class="item-price-browsing">$64.95</div>
-          </a>
-        </div>
+      
+      <div class="shop-heading">
+          <h2>Shop</h2>
+        <div class="filter-selection"></div>
+      </div>
+      <div id="shop">
+        
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div> 
+
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>  
+        
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>  
+        
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>  
+        
+            <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>  
+        
+          <div class="shop-item">
+            <a href="dog-harness.html">
+                <img class="shop-food-attachment-img" src="Assets/Items/dog-leash-shop.jpg" alt="Food Attachment">
+                <div class="color-selection-preview">
+                  <div class="preview-color strawberry"></div>
+                  <div class="preview-color blackberry"></div>
+                  <div class="preview-color crazberry"></div>
+                  <div class="preview-color fire-orange"></div>
+                </div>
+                <div class="item-name-browsing">Food Attachment</div>
+                <div class="item-price-browsing">$19.95</div>
+            </a>
+          </div>          
+        
+        
       </div>
     </div>
-    <footer class="tertiary-background">
-      <div class="primary-text footer-content">
+
+    
+    <footer>
         05-630 Fall 2018 – Programming Usable Interfaces
         <br>Assignment 5: Web HTML and CSS Prototypes
         <br><br>Author: Clara Olson
-        <br><a class="primary-text" href="http://www.claraolson.com/">Website</a> | 
-        <a class="primary-text" href="https://github.com/cjolson">Github</a> | 
-        <a class="primary-text" href="https://www.linkedin.com/in/clara-olson-34581693/">LinkedIn</a>
-      </div>
+        <br><a href="http://www.claraolson.com/">Website</a> | 
+        <a href="https://github.com/cjolson">Github</a> | 
+        <a href="https://www.linkedin.com/in/clara-olson-34581693/">LinkedIn</a>
     </footer>
+    
   </body>
 </html>
