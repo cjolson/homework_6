@@ -8,12 +8,13 @@ var item_rating = [5, 5, 5, 5, 5, 5];
 var item_numOfReviews = [88, 139, 102, 32, 35, 19];
 var item_link = ["dog-harness.html", "dog-harness.html", "dog-harness.html", "dog-harness.html", 
              "dog-harness.html", "dog-harness.html"]
-var item_tags = [["cat", "harness"], ["dog", "harness"], ["cat", "dog", "accessory"], 
-             ["cat", "dog", "accessory"], ["cat", "dog", "accessory"], ["cat", "dog", "backpack"]];
+var item_tags = [["cat", "harness", "featured"], ["dog", "harness", "featured"], 
+                 ["cat", "dog", "accessory", "featured"], ["cat", "dog", "accessory"], 
+                 ["cat", "dog", "accessory"], ["cat", "dog", "backpack"]];
 var numOfItems = 6
 
 class Item {
-  constructor(name, shopImg, price, rating, numOfReviews, link, tags) {
+  constructor(name, shopImg, price, rating, numOfReviews, link, tags, featured) {
     this.name = name;
     this.shopImg = shopImg;
     this.price = price;
@@ -27,7 +28,16 @@ class Item {
     this.tags = tags;
     this.color = null;
     this.size = null;
-  }
+    this.html = null;
+  };
+  
+  setHTML(html) {
+    this.html = html;
+  };
+  
+  tagPresent(tag) {
+    return this.tags.indexOf(tag) >= 0;
+  };
 }
 
 class Cart {
@@ -48,42 +58,48 @@ function makeItemList() {
   for (i=0; i<numOfItems; i++) {
     item = new Item(item_name[i], item_shopImg[i], item_price[i], item_rating[i], 
                     item_numOfReviews[i], item_link[i], item_tags[i]);
+    item.setHTML(`<a href="`+item.link+`">
+                        <img class="shop-dog-harness-img" src="`+item.shopImg+`" alt="`+item.name+`">
+                        <div class="color-selection-preview">
+                          <div class="preview-color strawberry"></div>
+                          <div class="preview-color blackberry"></div>
+                          <div class="preview-color crazberry"></div>
+                          <div class="preview-color fire-orange"></div>
+                        </div>
+                        <div class="item-name-browsing">`+item.name+`</div>
+                        <div class="item-price-browsing">`+item.price+`</div>
+                        </a>`);
     all_items.push(item);
   }
   return all_items
 }
 
-function populateItems(all_items, type) {
+function populateItems(item_list, type) {
   var container = document.getElementById(type);
   if (container == null) {
     return;
   }
-  console.log(type+" items");
-  if (type == "featured") {
-    total = 3;
-  } else if (type == "shop") {
-    total = 6;
-  } else if (type == "recommended") {
-    total = 3;
-  }
-  for (i=0; i<total; i++) {
+  var num = item_list.length;
+  for (i=0; i<num; i++) {
     var div = document.createElement("div");
     div.className = "shop-item";
-    div.innerHTML = `
-        <a href="`+all_items[i].link+`">
-        <img class="shop-dog-harness-img" src="`+all_items[i].shopImg+`" alt="`+all_items[i].name+`">
-        <div class="color-selection-preview">
-          <div class="preview-color strawberry"></div>
-          <div class="preview-color blackberry"></div>
-          <div class="preview-color crazberry"></div>
-          <div class="preview-color fire-orange"></div>
-        </div>
-        <div class="item-name-browsing">`+all_items[i].name+`</div>
-        <div class="item-price-browsing">`+all_items[i].price+`</div>
-        </a>`;
+    div.innerHTML = item_list[i].html;
     container.appendChild(div);
     console.log("created a "+type+" items");
   }
+}
+
+function filterItems(item_list, tag) {
+  var filtered_list = [];
+  var num = item_list.length;
+  for (i=0; i<num; i++) {
+    console.log(tag);
+    console.log(item_list[i].tags);
+    if (item_list[i].tagPresent(tag)) {
+      filtered_list.push(item_list[i]);
+    }
+  }
+  return filtered_list;
 }
 
 $(document).ready(() => {
@@ -92,7 +108,7 @@ $(document).ready(() => {
 
 $(window).on("load", function() {
   var all_items=makeItemList();
-  populateItems(all_items, "featured");
+  populateItems(filterItems(all_items, "featured"), "featured");
   populateItems(all_items, "shop");
   populateItems(all_items, "recommended");
 });
