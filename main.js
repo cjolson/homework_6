@@ -59,7 +59,7 @@ function makeItemList() {
     item = new Item(item_name[i], item_shopImg[i], item_price[i], item_rating[i], 
                     item_numOfReviews[i], item_link[i], item_tags[i]);
     item.setHTML(`<a href="`+item.link+`">
-                        <img class="shop-dog-harness-img" src="`+item.shopImg+`" alt="`+item.name+`">
+                        <img class="shop-item-img" src="`+item.shopImg+`" alt="`+item.name+`">
                         <div class="color-selection-preview">
                           <div class="preview-color strawberry"></div>
                           <div class="preview-color blackberry"></div>
