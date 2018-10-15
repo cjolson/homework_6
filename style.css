@@ -114,14 +114,16 @@ p {
 	color: var(--off-black);
 }
 
-#shop, 
-#featured,
+#shop,
+#featured, 
 #recommended {
-  align-content: space-around;
+  margin: auto;
+  max-width: 1000px;
+  padding: 0 5%;
   display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 10% 0 10%;
 }
 
 .shop-heading {
@@ -161,13 +163,14 @@ p {
 }
 
 .filter-sub-menu {
+  cursor: pointer;
   align-items: center;
   background-color: var(--tertiary-green);
+  color: var(--off-black);
   display: flex;
   font-size: 20px;
   justify-content: space-between;
-  margin-left: 40px;
-	padding: 0 10%;
+	padding: 15px 10%;
 }
 
 .filter-selection {
@@ -195,10 +198,18 @@ p {
   	background-color: #E38C2D;
 }
 
-.shop-item-img {
+.shop-item-preview {
+  margin: auto;
 	border-radius: 50%;
 	height: 250px;
 	width: 250px;
+  overflow: hidden;
+}
+
+.item-browing-img {
+  height: inherit;
+  position: relative;
+  transform: translateX(-30px);
 }
 
 .color-selection-preview {
@@ -241,9 +252,8 @@ p {
 }
 
 .shop-item {
-  flex: 1 0 26%;
   text-align: center;
-  margin: 20px 0;
+  margin: 40px 30px;
 }
 
 #item-page-info {
@@ -387,8 +397,8 @@ button {
 	width: 80px;
 	background-color: grey;
 	margin: 5px;
-  background-image: url("Assets/Items/dog-leash-shop.jpg");
-  background-size: contain;
+  background-image: url("Assets/Items/Dog-Harness/dog-harness-1.jpg");
+  background-size: cover;
 }
 
 .thumbnail-image-wheel {
@@ -449,4 +459,46 @@ footer {
 
 .rating {
   text-align: center;
+}
+
+.filter-open {
+  background-color: var(--primary-green);
+  color: var(--off-white);
+}
+
+.filter-choices {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--off-white);
+  color: var(--off-black);
+  padding: 20px 20%;
+}
+
+.filter-choice {
+  font-size: 18px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clear {
+  display: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: var(--tertiary-green);
+  border: 1px solid var(--off-black);
+  color: var(--off-black);
+  justify-content: space-between;
+  margin: 0px 5px;
+}
+
+.selected-filter {
+  margin-right: 40px;
+}
+
+#all {
+  color: var(--off-white);
+  background-color: var(--primary-green);
 }
