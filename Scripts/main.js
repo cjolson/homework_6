@@ -90,6 +90,8 @@ $(window).on('load', function() {
     $('.select-color').each( function () {
       makeSelection(color_button, $(this));
     })
+    console.log($(this));
+    //$('#'+color_button.getAttribute('id')).find('.selection-label').addClass('show-label');
   };
 
 /**
@@ -99,6 +101,7 @@ $(window).on('load', function() {
     $('.select-size').each( function () {
       makeSelection(size_button, $(this));
     })
+    console.log(size_button.children);
   };
 
 /**
@@ -114,8 +117,8 @@ $(window).on('load', function() {
   *
   */
   makeSelection = function (button, choice) {
-    console.log(button.getAttribute('id'));
     if (choice.is('#'+button.getAttribute('id'))) {
+      console.log(button.getAttribute('id'));
       choice.addClass('selected');
       choice.removeClass('not-selected');
     } else {

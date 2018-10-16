@@ -405,6 +405,7 @@ button {
 }
 
 .thumbnail-image {
+  cursor: pointer;
 	height: 60px;
 	width: 80px;
 	background-color: grey;
@@ -536,4 +537,9 @@ footer {
 .not-selected {
   opacity: 0.2;
   box-shadow: none;
+}
+
+.show-label {
+  visibility: visible;
+  opacity: 1;
 }
