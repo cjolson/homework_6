@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Shop | Muddy Paws Adventure Gear</title>
+    <title>Home | Muddy Paws Adventure Gear</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="Scripts/Item.js" type="text/javascript"></script>
+    <script src="Scripts/Cart.js" type="text/javascript"></script>
+    <script src="Scripts/main.js" type="text/javascript"></script>
   </head>
   <body>   
     <header>
@@ -33,26 +35,21 @@
     <div class="shop-page">      
       <div class="filter-menu">
         <h3 class="top-filter">Filter</h3>
-        
         <div class="filter-sub-menu" onclick="openFilter(this, 'pet')">
           <span>Pets</span> <span id="expand">+</span>
         </div>
-        
         <div class="filter-choices">          
           <div class="filter-choice">Dogs<input id="dogs-check" type="checkbox" value="Dogs" onclick="updateFilters(this)"></div>
           <div class="filter-choice">Cats<input id="cats-check" type="checkbox" value="Cats" onclick="updateFilters(this)"></div>
         </div>
-
         <div class="filter-sub-menu" onclick="openFilter(this, 'gear')">
           <span>Gear</span> <span id="expand">+</span>
         </div>
-
         <div class="filter-choices">
           <div class="filter-choice">Harnesses<input id="harnesses-check" type="checkbox" value="Harnesses" onclick="updateFilters(this)"></div>
           <div class="filter-choice">Accessories<input id="accessories-check" type="checkbox" value="Acessories" onclick="updateFilters(this)"></div>
           <div class="filter-choice">Backpacks<input id="backpacks-check" type="checkbox" value="Backpacks" onclick="updateFilters(this)"></div>
-        </div>
-        
+        </div>        
       </div>
       <div class="shop-heading">
           <h2>Shop</h2>

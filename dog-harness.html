@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Dog Harness | Muddy Paws Adventure Gear</title>
+    <title>Home | Muddy Paws Adventure Gear</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="main.js" type="text/javascript"></script>
+    <script src="Scripts/Item.js" type="text/javascript"></script>
+    <script src="Scripts/Cart.js" type="text/javascript"></script>
+    <script src="Scripts/main.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
@@ -35,10 +37,14 @@
           <img class="item-page-img" src="Assets/Items/Dog-Harness/dog-harness-1.jpg" 
                alt="Dog Harness">
           <div class="thumbnail-image-wheel">
-            <div class="selected thumbnail-image"></div>
-            <div class="thumbnail-image"></div>
-            <div class="thumbnail-image"></div>
-            <div class="thumbnail-image"></div>
+            <div id="img-1" class="selected thumbnail-image" 
+                 onclick="selectImage(this)"></div>
+            <div id="img-2" class="not-selected thumbnail-image" 
+                 onclick="selectImage(this)"></div>
+            <div id="img-3" class="not-selected thumbnail-image"
+                 onclick="selectImage(this)"></div>
+            <div id="img-4" class="not-selected thumbnail-image"
+                 onclick="selectImage(this)"></div>
           </div>
           <div class="item-description">
             <h4>Details</h4>
@@ -53,24 +59,36 @@
             <p class="item-price">$39.95</p>
           </div>
           <div class="rating">
-            <div class="star">★</div>
-            <div class="star">★</div>
-            <div class="star">★</div>
-            <div class="star">★</div>
-            <div class="star">★</div>
+            <div class="stars">★★★★★</div>
             <div><a class="all-reviews" href="item-all-reviews.html">See All Reviews (11)</a></div>
           </div>
           <div id="color-selection">
-            <button class="select-color strawberry"></button>
-            <button class="select-color blackberry"></button>
-            <button class="select-color crazberry"></button>
-            <button class="select-color fire-orange"></button>
+            <button id="strawberry" class="select-color strawberry" 
+                    onclick="selectColor(this)">
+              <p class="selection-label">Strawberry</p>
+            </button>
+            <button id="blackberry" class="select-color blackberry" 
+                    onclick="selectColor(this)">
+              <p class="selection-label">Blackberry</p>
+            </button>
+            <button id="crazberry" class="select-color crazberry" 
+                    onclick="selectColor(this)">
+              <p class="selection-label">Crazberry</p>
+            </button>
+            <button id="fire-orange" class="select-color fire-orange" 
+                    onclick="selectColor(this)">
+              <p class="selection-label">Fire Orange</p>
+            </button>
           </div>
           <div id="size-selections">
-            <button class="select-size">Tiny</button>
-            <button class="select-size">Small</button>
-            <button class="select-size">Medium</button>
-            <button class="select-size">Large</button>
+            <button id="tiny" class="select-size" onclick="selectSize(this)" 
+                    value="tiny">Tiny</button>
+            <button id="small" class="select-size" 
+                    onclick="selectSize(this)" >Small</button>
+            <button id="medium" class="select-size" 
+                    onclick="selectSize(this)">Medium</button>
+            <button id="large" class="select-size" 
+                    onclick="selectSize(this)" >Large</button>
           </div>   
         <div class="add-to-cart">
           <a href="item-addeded.html"><div class="button">Add to Cart</div></a>
