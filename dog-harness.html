@@ -24,22 +24,22 @@
         </a>
         <div class="nav-bar">
           <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="shop.html">Shop</a>  
+          <a class="nav-link" href="shop.html">Shop</a>
           <a class="nav-link" href="about.html">About</a>
           <a class="nav-link" href="">
             <img class="cart-link" src="Assets/Icons/cart.png" alt="Cart">
           </a>
         </div>
       </nav>
-    </header>   
-    <div class="item-page-content">      
+    </header>
+    <div class="item-page-content">
       <div class="item-view">
-          <img class="item-page-img" src="Assets/Items/Dog-Harness/dog-harness-1.jpg" 
+          <img class="item-page-img" src="Assets/Items/Dog-Harness/dog-harness-1.jpg"
                alt="Dog Harness">
           <div class="thumbnail-image-wheel">
-            <div id="img-1" class="selected thumbnail-image" 
+            <div id="img-1" class="selected thumbnail-image"
                  onclick="selectImage(this)"></div>
-            <div id="img-2" class="not-selected thumbnail-image" 
+            <div id="img-2" class="not-selected thumbnail-image"
                  onclick="selectImage(this)"></div>
             <div id="img-3" class="not-selected thumbnail-image"
                  onclick="selectImage(this)"></div>
@@ -48,11 +48,11 @@
           </div>
           <div class="item-description">
             <h4>Details</h4>
-            <p>Lorem ipsum dolor sit amet, risus nec elit, amet tellus volutpat, convallis in pede. 
+            <p>Lorem ipsum dolor sit amet, risus nec elit, amet tellus volutpat, convallis in pede.
             Erat amet et, vel proin, parturient ultricies pede. Sodales ridiculus cum, dui non tellus.</p>
             <p>Velit mauris, magna amet, morbi odio non. Mauris dolor egestas, nulla varius ante, eget nunc non.</p>
           </div>
-        </div>  
+        </div>
         <div id="item-page-info">
           <div>
             <p class="item-name">Dog Harness</p>
@@ -63,33 +63,38 @@
             <div><a class="all-reviews" href="item-all-reviews.html">See All Reviews (11)</a></div>
           </div>
           <div id="color-selection">
-            <button id="strawberry" class="select-color strawberry" 
-                    onclick="selectColor(this)">
+            <button id="strawberry" class="select-color strawberry"
+                    onclick="selectColor(this)"
+                    value="strawberry"
+                    >
               <p class="selection-label">Strawberry</p>
             </button>
-            <button id="blackberry" class="select-color blackberry" 
-                    onclick="selectColor(this)">
+            <button id="blackberry" class="select-color blackberry"
+                    onclick="selectColor(this)" value="blackberry">
               <p class="selection-label">Blackberry</p>
             </button>
-            <button id="crazberry" class="select-color crazberry" 
+            <button id="crazberry" class="select-color crazberry"
                     onclick="selectColor(this)">
               <p class="selection-label">Crazberry</p>
             </button>
-            <button id="fire-orange" class="select-color fire-orange" 
+            <button id="fire-orange" class="select-color fire-orange"
                     onclick="selectColor(this)">
               <p class="selection-label">Fire Orange</p>
             </button>
           </div>
           <div id="size-selections">
-            <button id="tiny" class="select-size" onclick="selectSize(this)" 
+            <button id="tiny" class="select-size" onclick="selectSize(this)"
                     value="tiny">Tiny</button>
-            <button id="small" class="select-size" 
+            <button id="small" class="select-size"
                     onclick="selectSize(this)" >Small</button>
-            <button id="medium" class="select-size" 
+            <button id="medium" class="select-size"
                     onclick="selectSize(this)">Medium</button>
-            <button id="large" class="select-size" 
+            <button id="large" class="select-size"
                     onclick="selectSize(this)" >Large</button>
-          </div>   
+          </div>
+          <div class="select-quantity">
+            <p>Quanity: </p> <input class="quantity" type="number" name="quantity" min="0">
+          </div>
         <div class="add-to-cart">
           <a href="item-addeded.html"><div class="button">Add to Cart</div></a>
         </div>
@@ -99,15 +104,15 @@
         <h2>Recommended</h2>
         <div id="recommended">
           <!-- SHOP ITEMS GO HERE -->
-      </div> 
+      </div>
     </div>
     <footer>
         05-630 Fall 2018 – Programming Usable Interfaces
         <br>Assignment 5: Web HTML and CSS Prototypes
         <br><br>Author: Clara Olson
-        <br><a href="http://www.claraolson.com/">Website</a> | 
-        <a href="https://github.com/cjolson">Github</a> | 
+        <br><a href="http://www.claraolson.com/">Website</a> |
+        <a href="https://github.com/cjolson">Github</a> |
         <a href="https://www.linkedin.com/in/clara-olson-34581693/">LinkedIn</a>
-    </footer>   
+    </footer>
   </body>
 </html>

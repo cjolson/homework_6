@@ -115,7 +115,7 @@ p {
 }
 
 #shop,
-#featured, 
+#featured,
 #recommended {
   margin: auto;
   max-width: 1200px;
@@ -186,7 +186,7 @@ p {
 }
 
 .strawberry:hover {
-  
+
 }
 
 .blackberry {
@@ -334,7 +334,7 @@ p {
 
 button {
 	cursor: pointer;
-  border: none;     
+  border: none;
   background-color: none;
 }
 
@@ -528,11 +528,9 @@ footer {
   color: var(--off-white);
   visibility: hidden;
   opacity: 0;
-  
+
   transition: opacity .2s, visibility .2s;
 }
-
-
 
 .not-selected {
   opacity: 0.2;
@@ -542,4 +540,18 @@ footer {
 .show-label {
   visibility: visible;
   opacity: 1;
+}
+
+.select-quantity {
+  display: flex;
+  font-weight: bold;
+  padding: 30px 80px;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.quantity {
+  text-align: center;
+  align-self: center;
+  height: 20px;
 }
