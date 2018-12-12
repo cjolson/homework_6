@@ -7,8 +7,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="Scripts/Item.js" type="text/javascript"></script>
-    <script src="Scripts/Cart.js" type="text/javascript"></script>
     <script src="Scripts/main.js" type="text/javascript"></script>
   </head>
   <body>
@@ -96,14 +94,61 @@
             <p>Quanity: </p> <input class="quantity" type="number" name="quantity" min="0">
           </div>
         <div class="add-to-cart">
-          <a href="item-addeded.html"><div class="button">Add to Cart</div></a>
+          <div class="button" onclick="addToCart()">Add to Cart</div>
         </div>
        </div>
       </div>
       <div class="recommended-content">
         <h2>Recommended</h2>
         <div id="recommended">
-          <!-- SHOP ITEMS GO HERE -->
+          <div class="shop-item">
+            <a href="dog-harness.html">
+              <div class="shop-item-preview">
+                <img class="item-browing-img" src="Assets/Items/Dog-Harness/dog-harness-1.jpg"
+                  alt="Dog Harness">
+              </div>
+              <div class="color-selection-preview">
+                <div class="preview-color strawberry"></div>
+                <div class="preview-color blackberry"></div>
+                <div class="preview-color crazberry"></div>
+                <div class="preview-color fire-orange"></div>
+              </div>
+              <div class="item-name-browsing">Dog Harness</div>
+              <div class="item-price-browsing">$24.95</div>
+            </a>
+          </div>
+          <div class="shop-item">
+            <a href="dog-harness.html">
+              <div class="shop-item-preview">
+                <img class="item-browing-img" src="Assets/Items/Dog-Harness/dog-harness-1.jpg"
+                  alt="Dog Harness">
+              </div>
+              <div class="color-selection-preview">
+                <div class="preview-color strawberry"></div>
+                <div class="preview-color blackberry"></div>
+                <div class="preview-color crazberry"></div>
+                <div class="preview-color fire-orange"></div>
+              </div>
+              <div class="item-name-browsing">Dog Harness</div>
+              <div class="item-price-browsing">$24.95</div>
+            </a>
+          </div>
+          <div class="shop-item">
+            <a href="dog-harness.html">
+              <div class="shop-item-preview">
+                <img class="item-browing-img" src="Assets/Items/Dog-Harness/dog-harness-1.jpg"
+                  alt="Dog Harness">
+              </div>
+              <div class="color-selection-preview">
+                <div class="preview-color strawberry"></div>
+                <div class="preview-color blackberry"></div>
+                <div class="preview-color crazberry"></div>
+                <div class="preview-color fire-orange"></div>
+              </div>
+              <div class="item-name-browsing">Dog Harness</div>
+              <div class="item-price-browsing">$24.95</div>
+            </a>
+          </div>
       </div>
     </div>
     <footer>
